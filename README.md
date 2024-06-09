@@ -4,6 +4,8 @@
 
 import unpacked extension from the `dist` directory
 
+Vite config has been setup to treat the extension `popup`, `options`, and `side panel` as separate entry points. Files in `content-scripts` will be chunked into their own dedicated files so you run specified files based on url per the manifest.
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
