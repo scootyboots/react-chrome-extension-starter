@@ -1,0 +1,22 @@
+{
+  "manifest_version": 3,
+  "name": "Extension Boilerplate",
+  "version": "1.0.0",
+  "action": { "default_popup": "src/popup/index.html" },
+  "options_page": "src/options/index.html",
+  "devtools_page": "src/devtools/index.html",
+  "background": {
+    "service_worker": "src/background/index.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "js": ["src/content-scripts/script.js"],
+      "matches": ["<all_urls>"]
+    },
+    {
+      "js": ["src/content-scripts/other.js"],
+      "matches": ["https://developer.chrome.com/*"]
+    }
+  ]
+}
