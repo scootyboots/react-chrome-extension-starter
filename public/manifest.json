@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "Extension Boilerplate",
+  "name": "React Chrome Extension Starter",
   "version": "1.0.0",
   "action": { "default_popup": "src/popup/index.html" },
   "options_page": "src/options/index.html",
