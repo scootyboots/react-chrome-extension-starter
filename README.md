@@ -1,3 +1,9 @@
+`npm install` to get started
+
+`npm run build:watch` for development
+
+import unpacked extension from the `dist` directory
+
 # React + TypeScript + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
