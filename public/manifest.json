@@ -2,9 +2,9 @@
   "manifest_version": 3,
   "name": "React Chrome Extension Starter",
   "version": "1.0.0",
-  "action": { "default_popup": "src/popup/index.html" },
-  "options_page": "src/options/index.html",
-  "devtools_page": "src/devtools/index.html",
+  "action": { "default_popup": "src/popup/popup.html" },
+  "options_page": "src/options/options.html",
+  "devtools_page": "src/devtools/devtools.html",
   "background": {
     "service_worker": "src/background/index.js",
     "type": "module"

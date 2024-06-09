@@ -4,9 +4,10 @@
 
 import unpacked extension from the `dist` directory
 
-`vite.config.ts` has been setup to treat the extension `popup`, `options`, and `side panel` as separate entry points. The `App` component expects a `view` prop so that it can know which page it's being run on. Files in `content-scripts` will be chunked into their own dedicated files so you run specified files based on url per the manifest.
+`vite.config.ts` has been setup to treat the extension `popup`, `options`, and `side panel` as separate entry points. Files in `content-scripts` will be chunked into their own dedicated files so you run specified files based on url per the manifest.
 
 If you don't want or have use for the `side panel` you'll need to remove their entires from `vite.config.ts`:
+
 ```js
 devtools: 'src/devtools/index.html',
 panel: 'src/panel/index.html',

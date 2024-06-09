@@ -4,21 +4,18 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import { otherScript } from './content-scripts/other'
 import { scriptFun } from './content-scripts/script'
-
+import { findContext } from './util/findContext'
 // ensures content scripts don't get tree-shaken
 console.log(otherScript, scriptFun)
 
-interface AppProps {
-  view: 'popup' | 'options' | 'panel'
-}
-
-function App({ view }: AppProps) {
+function App() {
   const [count, setCount] = useState(0)
+  const context = findContext()
 
   return (
     <>
       <div>
-        <h1>{view}</h1>
+        <h1>{context}</h1>
         <button onClick={() => chrome.runtime.openOptionsPage()}>
           open options page
         </button>
